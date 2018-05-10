@@ -67,11 +67,14 @@ route('Fremont Bridge', 'Diamond Marina', '-', 0.3, RouteTypes.MULTI_USE)
 route('Fremont Bridge', 'Work', 'Dexter Ave', 2.4, RouteTypes.MINOR_SEP)
 
 route('Fred Meyer', 'University Bridge', 'B-G Trail', 3.2, RouteTypes.MULTI_USE)
-route('University Bridge', 'Lake Union Park', 'Lake Union Loop', 2.5, RouteTypes.MULTI_USE)
 route('University Bridge', 'Lake Union Park', 'Eastlake Ave', 2.2, RouteTypes.MINOR_SEP)
 
 route('Fred Meyer', 'Montlake Bridge', 'B-G Trail', 4.0, RouteTypes.MULTI_USE)
 route('Montlake Bridge', 'Lake Union Park', 'Delmar Dr', 3.3, RouteTypes.MINOR_SEP)
+
+route('Home', 'Greenlake', '77th St', 2.8, RouteTypes.ROAD)
+route('Greenlake', 'University Bridge', 'Roosevelt Way', 2.9, RouteTypes.MINOR_SEP)
+route('Greenlake', 'Fremont Bridge', 'Stone Way', 3.3, RouteTypes.MINOR_SEP)
  
 num_paths = len(list(all_simple_paths(graph, 'Home', 'Work')))
 print("Calculated {0} paths".format(num_paths))
